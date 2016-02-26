@@ -1,6 +1,262 @@
-<!DOCTYPE html>
-<html>
-<body>
-<p>REZ</p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Rez - Digital products and experiences</title>
+    <meta name="description" content="We create and scale digital products and experiences that transform how we live and work.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      /* HTML5 display definitions
+         ========================================================================== */
+
+      /**
+       * Correct `block` display not defined for any HTML5 element in IE 8/9.
+       * Correct `block` display not defined for `details` or `summary` in IE 10/11
+       * and Firefox.
+       * Correct `block` display not defined for `main` in IE 11.
+       */
+
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      main,
+      menu,
+      nav,
+      section,
+      summary {
+        display: block;
+      }
+
+      /* Links
+         ========================================================================== */
+
+      /**
+       * Remove the gray background color from active links in IE 10.
+       */
+
+      a {
+        background-color: transparent;
+      }
+
+      /**
+       * Improve readability of focused elements when they are also in an
+       * active/hover state.
+       */
+
+      a:active,
+      a:hover {
+        outline: 0;
+      }
+
+      /**
+       * Address variable `h1` font-size and margin within `section` and `article`
+       * contexts in Firefox 4+, Safari, and Chrome.
+       */
+
+      h1 {
+        font-size: 2em;
+        margin: 0;
+      }
+    </style>
+
+    <style>
+      @font-face {
+        font-family: "walsheim-bold";
+        src: url("fonts/walsheim-bold.eot");
+        src: url("fonts/walsheim-bold.eot?#iefix") format("embedded-opentype"),
+             url("fonts/walsheim-bold.woff") format("woff"),
+             url("fonts/walsheim-bold.ttf") format("truetype");
+      }
+
+      html {
+        box-sizing: border-box;
+        text-size-adjust: 100%;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      body {
+        color: #000;
+        height: 100vh;
+        padding: 30px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale
+      }
+
+      @media (min-width: 640px) {
+        body {
+          padding-top: 40px;
+        }
+      }
+
+      /* Header
+      ========================================================================== */
+      .Header {
+        -ms-flex-align: center;
+        align-items: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .Header-logo {
+        height: 20px;
+        width: 39px;
+      }
+
+      .Header-notice {
+        font-family: freight-text-pro, Georgia, serif;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 18px;
+      }
+
+      @media (min-width: 640px) {
+        .Header-notice {
+          font-size: 24px;
+          line-height: 28px;
+        }
+
+        .Header-logo {
+          height: 30px;
+          width: 59px;
+        }
+      }
+
+
+      /* Main
+        ========================================================================== */
+      .Main {
+        margin: 18vw auto;
+      }
+
+      .Main-welcome {
+        font-family: freight-text-pro, Georgia, serif;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 16px;
+      }
+
+      .Main-welcome::after {
+        background-color: #EF2F49;
+        content: '';
+        display: block;
+        height: 4px;
+        margin-top: 26px;
+        width: 40px;
+      }
+
+      .Main-about {
+        font-family: walsheim-bold, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 35px;
+        margin: 29px 0 0;
+      }
+
+      .Main-contact {
+        margin-top: 30px;
+      }
+
+      @media (min-width: 640px) {
+        .Main {
+          margin-bottom: 60px;
+          margin-top: 12.2vw;
+          max-width: 960px;
+        }
+
+        .Main-welcome::after {
+          margin-top: 41px;
+          width: 80px;
+        }
+
+        .Main-welcome {
+          font-size: 32px;
+          line-height: 24px;
+        }
+
+        .Main-about {
+          font-size: 60px;
+          line-height: 66px;
+          margin-top: 36px;
+        }
+      }
+
+      /* Contact
+        ========================================================================== */
+        .Contact {
+          font-family: freight-text-pro, Georgia, serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+
+        .Contact-link {
+          color: #000;
+          display: block;
+          font-style: italic;
+          text-decoration: none;
+        }
+
+        .Contact-link:hover { text-decoration: underline; }
+
+        .Contact-divider { display: none; }
+
+        @media (min-width: 640px) {
+          .Contact {
+            line-height: 30px;
+            font-size: 24px;
+          }
+
+          .Contact-link { display: inline-block; }
+
+          .Contact-divider { display: inline; }
+        }
+
+    </style>
+    <script src="https://use.typekit.net/keu2rte.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+  <body>
+    <header class="Header">
+      <img class="Header-logo" src="logo.svg" alt="Rez logo" />
+      <span class="Header-notice">Full site coming soon.</span>
+    </header>
+    <main class="Main">
+      <h1 class="Main-welcome">Welcome to Rez</h1>
+      <h2 class="Main-about">We design and prototype digital products and experiences that transform how we live and work.</h2>
+      <div class="Main-contact">
+        <p class="Contact">
+          <a class="Contact-link" href="mailto:hello@rezinteractive.com">hello@rezinteractive.com</a>
+          <span class="Contact-divider">/</span>
+          <a class="Contact-link" href="tel:+44203124456">+44(0) 203 124 456</a>
+        </p>
+      </div>
+    </main>
+  </body>
 </html>
